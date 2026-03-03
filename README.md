@@ -2,11 +2,14 @@
 
 CopyBucket is a clipboard utility to collect, search, and paste what you copy.
 
-## Download
+## Visit our Website
 
-- Windows: https://github.com/<YOUR_GITHUB_ORG_OR_USER>/<YOUR_REPO>/releases/latest
-- Linux: Coming soon
-- macOS: Coming soon
+Visit the [CopyBucket Landing Page](index.html) for a complete feature overview and download links.
+
+## Quick Download
+
+- **Windows**: [Download .exe](downloads/windows/CopyBucketSetup.exe)
+- **Linux (Ubuntu)**: [Download Binary](downloads/ubuntu/copybucket)
 
 ## Shortcut
 
@@ -24,6 +27,7 @@ CopyBucket is a clipboard utility to collect, search, and paste what you copy.
 This repo includes a GitHub Pages site in the `docs/` folder.
 
 To publish:
+
 - Settings → Pages
 - Source: Deploy from a branch
 - Branch: `main` / folder: `docs`
