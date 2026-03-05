@@ -601,17 +601,185 @@ nav {
 }
 
 /* Req extras */
-.req-note{font-weight:400;color:var(--text3);font-size:.78rem}
-.req-info{font-size:.82rem;color:var(--text2);line-height:1.5;padding:.6rem .8rem;background:var(--glass);border-radius:8px;border:1px solid var(--border)}
-.req-info code,.req-dep-title code{background:var(--code-bg);color:var(--accent);padding:2px 6px;border-radius:4px;font-size:.78rem;font-family:'Courier New',monospace}
-.req-dep-title{font-size:.88rem;font-weight:600;color:var(--text);margin-bottom:.4rem}
-.dep-table{display:flex;flex-direction:column;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.6rem}
-.dep-row{display:grid;grid-template-columns:1fr 1fr;padding:.5rem .8rem;font-size:.78rem;border-bottom:1px solid var(--border);transition:background .2s}
-.dep-row:last-child{border-bottom:none}
-.dep-row:hover:not(.dep-header){background:var(--glass)}
-.dep-header{background:var(--bg-elevated);font-weight:600;color:var(--text);font-size:.75rem;text-transform:uppercase;letter-spacing:.5px}
-.dep-row code{background:var(--code-bg);color:var(--accent);padding:1px 5px;border-radius:4px;font-family:'Courier New',monospace;font-size:.75rem}
-.dep-row span{color:var(--text2)}
+.req-note {
+  font-weight: 400;
+  color: var(--text3);
+  font-size: 0.78rem;
+}
+.req-info {
+  font-size: 0.82rem;
+  color: var(--text2);
+  line-height: 1.5;
+  padding: 0.6rem 0.8rem;
+  background: var(--glass);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.req-info code,
+.req-dep-title code {
+  background: var(--code-bg);
+  color: var(--accent);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-family: "Courier New", monospace;
+}
+.req-dep-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+.dep-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+.dep-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.78rem;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s;
+}
+.dep-row:last-child {
+  border-bottom: none;
+}
+.dep-row:hover:not(.dep-header) {
+  background: var(--glass);
+}
+.dep-header {
+  background: var(--bg-elevated);
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.dep-row code {
+  background: var(--code-bg);
+  color: var(--accent);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
+}
+.dep-row span {
+  color: var(--text2);
+}
+
+/* ===== INSTALLATION GUIDE ===== */
+.install-guide {
+  padding: 100px 6%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.install-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+.install-method h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+.install-method p {
+  font-size: 0.95rem;
+  color: var(--text2);
+  margin-bottom: 1.5rem;
+}
+.terminal-box {
+  background: #000;
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-family: "Courier New", monospace;
+  position: relative;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.terminal-header {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1rem;
+}
+.terminal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.t-red {
+  background: #ff5f56;
+}
+.t-yellow {
+  background: #ffbd2e;
+}
+.t-green {
+  background: #27c93f;
+}
+
+.terminal-box code {
+  color: #fff;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  display: block;
+  word-break: break-all;
+}
+.terminal-box code .prompt {
+  color: var(--accent);
+  margin-right: 8px;
+  user-select: none;
+}
+.terminal-box code .comment {
+  color: #6a737d;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.gui-steps {
+  list-style: none;
+  counter-reset: step;
+}
+.gui-steps li {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text2);
+}
+.gui-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .install-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
 
 /* ===== DOWNLOAD CTA ===== */
 .download-cta {
