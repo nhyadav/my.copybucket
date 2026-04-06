@@ -9,7 +9,7 @@
     <link rel="canonical" href="https://clipinvault.com/changelog/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://clipinvault.com/changelog/" />
-    <meta property="og:title" content="Changelog — ClipinVault" />
+    <meta property="og:title" content="Changelog-ClipinVault" />
     <meta property="og:description" content="Full version history for ClipinVault clipboard manager." />
     <meta property="og:image" content="https://clipinvault.com/assets/og-preview.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@
             <a href="../#requirements">Requirements</a>
             <a href="../#download">Download</a>
             <a href="../about/">About</a>
-            <a href="../changelog/">Changelog</a>
+            <a href="../changelog/" class="nav-active">Changelog</a>
             <a href="../privacy/">Privacy</a>
           </div>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
@@ -57,9 +57,10 @@
           <div class="changelog-meta">
             <span class="version-tag">v1.3.1</span>
             <span class="version-date">March 25, 2026</span>
+            <span class="version-latest-badge">Latest</span>
           </div>
           <div class="changelog-content">
-            <ul>
+            <ol>
               <li>Added tag-based content types: URL, Code, JSON, SQL, Command, MFA, Secrets, and Image clips alongside regular text.</li>
               <li>Clipboard now captures formatting — pastes retain the original structure of copied content.</li>
               <li>New preview button lets you view the full content of any clip before pasting.</li>
@@ -68,7 +69,7 @@
               <li>Redesigned icon and theme for a more professional, polished look.</li>
               <li>Full space utilization with a row-based layout for better readability across screen sizes.</li>
               <li>Auto-clean scheduler: unused clips with zero usage are cleared automatically to keep ClipinVault stable and lean.</li>
-            </ul>
+            </ol>
             <div class="changelog-downloads">
               <a href="../downloads/windows/ClipinVaultSetup.exe" class="btn btn-primary btn-sm">
                 <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/></svg>
@@ -86,17 +87,18 @@
           <div class="changelog-meta">
             <span class="version-tag">v1.2.3</span>
             <span class="version-date">February 28, 2026</span>
+            <span class="version-prev-badge">Previous Release</span>
           </div>
           <div class="changelog-content">
-            <ul>
+            <ol>
               <li>Change content type from text to secret to encrypt data — use this only for credentials. Encryption key is stored in the Windows Key Manager or equivalent on other OS.</li>
               <li>Pin content to keep it visible on top of the list at all times.</li>
               <li>Filter and search are now available across all clips.</li>
               <li>Set a title for any content to remember context, such as which account's password was copied.</li>
               <li>Paste any content anywhere with a single click.</li>
-              <li>Supports three content types without formatting: Text, Secret, and Image.</li>
+              <li>Supports three content types without formatting: Text, Secret, and Image. <em>(Note: v1.3.1 adds URL, Code, JSON, SQL, Command, and MFA types.)</em></li>
               <li>Captures screenshots and image copies — supports only text and image types for copy-paste.</li>
-            </ul>
+            </ol>
           </div>
         </div>
       </section>
