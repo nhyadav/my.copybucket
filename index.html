@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      ClipinVault Secure & Modern Clipboard Manager for Windows & Linux
-    </title>
+    <title>ClipinVault | Secure Clipboard Manager for Windows & Linux</title>
     <meta
       name="description"
-      content="ClipinVault is a secure clipboard manager that automatically captures text, images, and rich content. Available for Windows and Ubuntu Linux. Privacy-first — all data stays on your machine."
+      content="ClipinVault is a secure clipboard manager that automatically captures text, images, and rich content. Available for Windows and Ubuntu Linux. Privacy-first: all data stays on your machine."
     />
     <meta
       name="keywords"
@@ -93,7 +91,6 @@
           <div class="nav-links" id="navLinks">
             <a href="#features">Features</a>
             <a href="#requirements">Requirements</a>
-            <a href="#download">Download</a>
             <a href="about/">About</a>
             <a href="changelog/">Changelog</a>
             <a href="privacy/">Privacy</a>
@@ -139,37 +136,191 @@
     <main>
       <!-- Hero -->
       <section class="hero" id="hero">
-        <div class="hero-badge">Clipboard Management • Reimagined</div>
-        <h1>
-          The clipboard manager<br /><span class="gradient-text"
-            >for professionals.</span
-          >
-        </h1>
-        <p class="hero-sub">
-          Stop losing text and images you copied earlier. ClipinVault runs
-          securely in the background, keeping a searchable history of your
-          clipboard directly on your local machine.
-        </p>
-        <div class="cta-group">
-          <a
-            href="downloads/windows/ClipinVaultSetup.exe"
-            class="btn btn-primary"
-            id="dl-win-hero"
-          >
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" /><rect x="13" y="2" width="9" height="9" /><rect x="2" y="13" width="9" height="9" /><rect x="13" y="13" width="9" height="9" /></svg>
-            Download for Windows
-          </a>
-          <a
-            href="downloads/ubuntu/clipinvault_1.3.1_amd64.deb"
-            class="btn btn-outline"
-            download
-            id="dl-ubuntu-hero"
-          >
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="12" cy="4.5" r="1.8" fill="currentColor" /><circle cx="5.5" cy="16" r="1.8" fill="currentColor" /><circle cx="18.5" cy="16" r="1.8" fill="currentColor" /></svg>
-            Download for Ubuntu
-          </a>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <div class="hero-badge">Clipboard Management • Reimagined</div>
+            <h1>
+              The clipboard manager<br /><span class="gradient-text"
+                >for professionals.</span
+              >
+            </h1>
+            <p class="hero-sub">
+              Stop losing text and images you copied earlier. ClipinVault runs
+              securely in the background, keeping a searchable history of your
+              clipboard directly on your local machine.
+            </p>
+            <div class="cta-group">
+              <a
+                href="downloads/windows/ClipinVaultSetup.exe"
+                class="btn btn-primary"
+                id="dl-win-hero"
+              >
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" /><rect x="13" y="2" width="9" height="9" /><rect x="2" y="13" width="9" height="9" /><rect x="13" y="13" width="9" height="9" /></svg>
+                Download for Windows
+              </a>
+              <a
+                href="downloads/ubuntu/clipinvault_1.3.1_amd64.deb"
+                class="btn btn-outline"
+                download
+                id="dl-ubuntu-hero"
+              >
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="12" cy="4.5" r="1.8" fill="currentColor" /><circle cx="5.5" cy="16" r="1.8" fill="currentColor" /><circle cx="18.5" cy="16" r="1.8" fill="currentColor" /></svg>
+                Download for Ubuntu
+              </a>
+            </div>
+            <p class="hero-note">
+              v1.3.1 &nbsp;&middot;&nbsp; Windows ~12 MB &nbsp;&middot;&nbsp;
+              Ubuntu ~18 MB
+            </p>
+          </div>
+
+          <div class="hero-media" aria-label="ClipinVault app UI preview">
+            <div class="mockup-window">
+              <div class="mockup-titlebar">
+                <div class="mk-tb-left">
+                  <img
+                    class="mk-tb-icon"
+                    src="assets/appicon.png?v=2"
+                    alt="ClipinVault"
+                    width="14"
+                    height="14"
+                  />
+                  <span class="mk-tb-app">ClipinVault</span>
+                </div>
+                <div class="mk-tb-search">Search clips...</div>
+                <div class="mk-tb-right">
+                  <span class="mk-status-dot" aria-hidden="true"></span>
+                  <span class="mk-status-label">Listening</span>
+                  <span class="mk-tb-icon-btn mk-win-btn" aria-hidden="true">-</span>
+                  <span class="mk-tb-icon-btn mk-win-btn" aria-hidden="true">□</span>
+                  <span class="mk-tb-icon-btn mk-win-btn mk-close-btn" aria-hidden="true">×</span>
+                </div>
+              </div>
+
+              <div class="mockup-body">
+                <aside class="mockup-sidebar" aria-hidden="true">
+                  <div class="mk-nav-group">
+                    <div class="mk-nav-item mk-nav-active">
+                      <span class="mk-nav-label">All Clips</span>
+                      <span class="mk-nav-count">41</span>
+                    </div>
+                    <div class="mk-nav-item">
+                      <span class="mk-nav-label">Pinned</span>
+                      <span class="mk-nav-count">8</span>
+                    </div>
+                    <div class="mk-nav-item">
+                      <span class="mk-nav-label">Secrets</span>
+                      <span class="mk-nav-count mk-count-zero">0</span>
+                    </div>
+                  </div>
+
+                  <div class="mk-sidebar-section-label">Tags</div>
+                  <div class="mk-nav-group">
+                    <div class="mk-nav-item">
+                      <span class="mk-nav-label"><span class="mk-tag-icon mk-tag-code"></span>Code</span>
+                      <span class="mk-nav-count mk-count-accent">9</span>
+                    </div>
+                    <div class="mk-nav-item">
+                      <span class="mk-nav-label"><span class="mk-tag-icon mk-tag-json"></span>JSON</span>
+                      <span class="mk-nav-count">5</span>
+                    </div>
+                    <div class="mk-nav-item">
+                      <span class="mk-nav-label"><span class="mk-tag-icon mk-tag-img"></span>Images</span>
+                      <span class="mk-nav-count">2</span>
+                    </div>
+                  </div>
+
+                  <div class="mk-sidebar-footer">
+                    <div class="mk-autoclean-badge">
+                      Auto-clean
+                      <span class="mk-ac-on">ON</span>
+                    </div>
+                  </div>
+                </aside>
+
+                <section class="mockup-clips" aria-hidden="true">
+                  <div class="mk-list-section-hdr">Recent</div>
+                  <div class="mk-row mk-row-active">
+                    <span class="mk-row-typedot mk-dot-txt"></span>
+                    <div class="mk-row-body">
+                      <div class="mk-row-id">Clip-53cb9bf3</div>
+                      <div class="mk-row-preview">this is the demo purpose only.</div>
+                    </div>
+                    <div class="mk-row-right">
+                      <span class="mk-row-time">Today</span>
+                      <span class="mk-row-pin-icon" aria-hidden="true">★</span>
+                      <span class="mk-row-copy-icon" aria-hidden="true">⧉</span>
+                      <span class="mk-row-del-icon" aria-hidden="true">🗑</span>
+                    </div>
+                  </div>
+                  <div class="mk-row">
+                    <span class="mk-row-typedot mk-dot-code"></span>
+                    <div class="mk-row-body">
+                      <div class="mk-row-id">Python - Installation</div>
+                      <div class="mk-row-preview">python3.11, venv, pip...</div>
+                    </div>
+                    <div class="mk-row-right">
+                      <span class="mk-row-time">Yesterday</span>
+                      <span class="mk-row-copy-icon" aria-hidden="true">⧉</span>
+                    </div>
+                  </div>
+                  <div class="mk-row">
+                    <span class="mk-row-typedot mk-dot-url"></span>
+                    <div class="mk-row-body">
+                      <div class="mk-row-id">Databricks secrets</div>
+                      <div class="mk-row-preview">https://...</div>
+                    </div>
+                    <div class="mk-row-right">
+                      <span class="mk-row-time">22-04</span>
+                      <span class="mk-row-lock-icon" aria-hidden="true">⛨</span>
+                    </div>
+                  </div>
+                  <div class="mk-row">
+                    <span class="mk-row-typedot mk-dot-code"></span>
+                    <div class="mk-row-body">
+                      <div class="mk-row-id">Manual Deploy · CI/CD</div>
+                      <div class="mk-row-preview">Connector, env vars, registry...</div>
+                    </div>
+                    <div class="mk-row-right">
+                      <span class="mk-row-time">21-04</span>
+                    </div>
+                  </div>
+                  <div class="mk-row">
+                    <span class="mk-row-typedot mk-dot-img"></span>
+                    <div class="mk-row-body">
+                      <div class="mk-row-id">Screenshot</div>
+                      <div class="mk-row-preview mk-preview-img">image clip captured</div>
+                    </div>
+                    <div class="mk-row-right">
+                      <span class="mk-row-time">20-04</span>
+                      <span class="mk-row-copy-icon" aria-hidden="true">⧉</span>
+                    </div>
+                  </div>
+                </section>
+
+                <aside class="mockup-detail" aria-hidden="true">
+                  <div class="mk-detail-top">
+                    <span class="mk-detail-type-badge">Text</span>
+                  </div>
+                  <div class="mk-detail-title">Clip-53cb9bf3</div>
+                  <div class="mk-detail-section-label">Full content</div>
+                  <div class="mk-detail-content">this is the demo purpose only.</div>
+                  <div class="mk-detail-section-label mk-detail-meta-label">
+                    Used by
+                    <span class="mk-detail-used">0</span>
+                    times
+                  </div>
+                  <div class="mk-detail-actions">
+                    <div class="mk-detail-btn mk-detail-btn-primary">Use for Paste</div>
+                    <div class="mk-detail-btn mk-detail-btn-ghost">Secret</div>
+                    <div class="mk-detail-btn mk-detail-btn-danger">Delete</div>
+                  </div>
+                  <div class="mk-detail-footer">ClipinVault v1.3.1</div>
+                </aside>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="hero-note">v1.3.1 &nbsp;&middot;&nbsp; Windows ~12 MB &nbsp;&middot;&nbsp; Ubuntu ~18 MB</p>
       </section>
       <!-- Features Bento Box -->
       <section class="features bento-section" id="features">
@@ -345,7 +496,7 @@
             <span class="req-badge coming">Coming Soon</span>
             <div class="coming-msg">
               <p>🚧 We're actively working on macOS support!</p>
-              <p>Stay tuned — a native macOS build is on its way.</p>
+              <p>Stay tuned-a native macOS build is on its way.</p>
             </div>
           </div>
         </div>
@@ -439,40 +590,6 @@
         </div>
       </section>
 
-      <!-- Download CTA -->
-      <section class="download-cta" id="download">
-        <div class="section-header anim-fade">
-          <h2>Ready to <span class="gradient-text">Get Started?</span></h2>
-          <p>
-            Download ClipinVault for free and take control of your clipboard.
-          </p>
-        </div>
-        <div class="cta-group anim-fade">
-          <a
-            href="downloads/windows/ClipinVaultSetup.exe"
-            class="btn btn-primary"
-            id="dl-win-cta"
-          >
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="9" height="9" /><rect x="13" y="2" width="9" height="9" /><rect x="2" y="13" width="9" height="9" /><rect x="13" y="13" width="9" height="9" /></svg>
-            Download for Windows
-          </a>
-          <a
-            href="downloads/ubuntu/clipinvault_1.3.1_amd64.deb"
-            class="btn btn-outline"
-            download
-            id="dl-ubuntu-cta"
-          >
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="12" cy="4.5" r="1.8" fill="currentColor" /><circle cx="5.5" cy="16" r="1.8" fill="currentColor" /><circle cx="18.5" cy="16" r="1.8" fill="currentColor" /></svg>
-            Download for Ubuntu
-          </a>
-          <span class="btn btn-disabled" title="macOS support coming soon">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-            </svg>
-            macOS &mdash; Coming Soon
-          </span>
-        </div>
-      </section>
     </main>
 
     <footer>
@@ -484,7 +601,7 @@
             width="24"
             height="24"
           />
-          <span class="logo-text" style="font-size: 1.1rem">
+          <span class="logo-text">
             <span class="logo-clipin">Clipin</span
             ><span class="logo-vault">Vault</span>
           </span>
@@ -552,34 +669,6 @@
           if (t) t.scrollIntoView({ behavior: "smooth" });
         });
       });
-
-      // SHA-256 checksum toggle
-      function toggleChecksum() {
-        const panel = document.getElementById("checksumPanel");
-        const btn = document.getElementById("checksumToggle");
-        const isOpen = panel.classList.toggle("open");
-        btn.setAttribute("aria-expanded", isOpen);
-        panel.setAttribute("aria-hidden", !isOpen);
-      }
-
-      // Copy hash to clipboard
-      function copyHash(id) {
-        const el = document.getElementById(id);
-        navigator.clipboard.writeText(el.textContent).then(() => {
-          const btn = el.nextElementSibling;
-          btn.style.color = "var(--accent)";
-          setTimeout(() => (btn.style.color = ""), 1500);
-        });
-      }
-
-      // macOS notify form
-      function handleMacNotify(e) {
-        e.preventDefault();
-        const form = document.getElementById("macosNotifyForm");
-        const success = document.getElementById("notifySuccess");
-        form.style.display = "none";
-        success.style.display = "block";
-      }
     </script>
   </body>
 </html>
